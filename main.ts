@@ -10,6 +10,7 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     }
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.castle.tileDarkGrass1, function (sprite, location) {
+    game.gameOver(false)
     game.setGameOverMessage(false, "You Died")
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
@@ -32,7 +33,6 @@ tiles.setCurrentTilemap(tilemap`level2`)
 mySprite3.ay = 200
 info.setLife(10)
 let sprite4 = sprites.create(assets.image`coin`, SpriteKind.Projectile)
-tiles.placeOnTile(sprite4, tiles.getTileLocation(18, 6))
 forever(function () {
     mySprite2 = sprites.create(assets.image`flameboi`, SpriteKind.Enemy)
     animation.runImageAnimation(
@@ -44,8 +44,7 @@ forever(function () {
     tiles.placeOnTile(mySprite2, tiles.getTileLocation(19, 6))
 })
 forever(function () {
-    sprite4.vx = -50
-    pause(200)
+    tiles.placeOnTile(sprite4, tiles.getTileLocation(18, 6))
 })
 forever(function () {
     mySprite2.vx = -50

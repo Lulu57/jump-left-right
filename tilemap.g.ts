@@ -24,7 +24,7 @@ namespace myTiles {
 . . . . . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . . . . . 
-2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 . 2 2 2 
 `, [myTiles.transparency16,sprites.castle.tileGrass2,sprites.castle.tilePath2,sprites.castle.tileGrass3,sprites.castle.tileDarkGrass1], TileScale.Sixteen);
         }
         return null;
