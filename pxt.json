@@ -1,5 +1,5 @@
 {
-    "name": "Jump/ left-right",
+    "name": "game",
     "description": "",
     "dependencies": {
         "device": "*"
